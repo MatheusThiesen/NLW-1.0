@@ -1,23 +1,45 @@
+import React from 'react';
+import Constants from 'expo-constants';
+import { 
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity
+} from 'react-native';
+
+import { Feather as Icon } from '@expo/vector-icons'
+
+const Points = () => {
+  return(
+    <View style={styles.container}>
+      <TouchableOpacity onPress={}>
+        <Icon name='arrow-left' size={20} color='#34cb79' />
+      </TouchableOpacity>
+    </View>
+  )
+}
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 32,
     paddingTop: 20 + Constants.statusBarHeight,
   },
-
+  
   title: {
     fontSize: 20,
     fontFamily: 'Ubuntu_700Bold',
     marginTop: 24,
   },
-
+  
   description: {
     color: '#6C6C80',
     fontSize: 16,
     marginTop: 4,
     fontFamily: 'Roboto_400Regular',
   },
-
+  
   mapContainer: {
     flex: 1,
     width: '100%',
@@ -25,17 +47,17 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     marginTop: 16,
   },
-
+  
   map: {
     width: '100%',
     height: '100%',
   },
-
+  
   mapMarker: {
     width: 90,
     height: 80, 
   },
-
+  
   mapMarkerContainer: {
     width: 90,
     height: 70,
@@ -45,13 +67,13 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     alignItems: 'center'
   },
-
+  
   mapMarkerImage: {
     width: 90,
     height: 45,
     resizeMode: 'cover',
   },
-
+  
   mapMarkerTitle: {
     flex: 1,
     fontFamily: 'Roboto_400Regular',
@@ -59,13 +81,13 @@ const styles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 23,
   },
-
+  
   itemsContainer: {
     flexDirection: 'row',
     marginTop: 16,
     marginBottom: 32,
   },
-
+  
   item: {
     backgroundColor: '#fff',
     borderWidth: 2,
@@ -79,18 +101,20 @@ const styles = StyleSheet.create({
     marginRight: 8,
     alignItems: 'center',
     justifyContent: 'space-between',
-
+    
     textAlign: 'center',
   },
-
+  
   selectedItem: {
     borderColor: '#34CB79',
     borderWidth: 2,
   },
-
+  
   itemTitle: {
     fontFamily: 'Roboto_400Regular',
     textAlign: 'center',
     fontSize: 13,
   },
 });
+
+export default Points;

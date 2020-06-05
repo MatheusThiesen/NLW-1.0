@@ -1,10 +1,22 @@
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const Detail = () => {
+  return(
+    <View>
+      <Text>Screen Detail </Text>
+    </View>
+  )
+}
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
     paddingTop: 20,
   },
-
+  
   pointImage: {
     width: '100%',
     height: 120,
@@ -12,14 +24,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 32,
   },
-
+  
   pointName: {
     color: '#322153',
     fontSize: 28,
     fontFamily: 'Ubuntu_700Bold',
     marginTop: 24,
   },
-
+  
   pointItems: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 16,
@@ -27,7 +39,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     color: '#6C6C80'
   },
-
+  
   address: {
     marginTop: 32,
   },
@@ -37,14 +49,14 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto_500Medium',
     fontSize: 16,
   },
-
+  
   addressContent: {
     fontFamily: 'Roboto_400Regular',
     lineHeight: 24,
     marginTop: 8,
     color: '#6C6C80'
   },
-
+  
   footer: {
     borderTopWidth: StyleSheet.hairlineWidth,
     borderColor: '#999',
@@ -63,7 +75,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-
+  
   buttonText: {
     marginLeft: 8,
     color: '#FFF',
@@ -71,3 +83,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto_500Medium',
   },
 });
+
+export default Detail;
